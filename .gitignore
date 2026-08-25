@@ -1,0 +1,27 @@
+# Local/runtime files
+.agents/
+.codex/
+*.log
+*.tmp
+
+# Deployment artifacts and recovered production bundles
+deploy/
+
+# Database dumps may contain real users, passwords, phone numbers, and PDPA data.
+DB/*.sql
+DB/*/
+*.sql
+db_test.php
+
+# Environment/secret files
+.env
+program/.env
+
+# User-generated uploads from the live/local app
+program/uploads/
+uploads/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,207 @@
+.border-red,
+.border-red:hover,
+.border-red:focus,
+.border-red:active{
+	border-color:red;
+}
+.color-red{
+	color:red;
+}
+
+input[type=checkbox].checkbox,
+input[type=radio].checkbox {
+	position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=checkbox].checkbox + label.label ,
+input[type=radio].checkbox + label.label {
+	padding-left:26px;
+	height:21px; 
+	display:inline-block;
+	line-height:21px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:21px;
+	color:black;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+input[type=checkbox].checkbox:checked + label.label ,
+input[type=radio].checkbox:checked + label.label {
+	background-position: 0 -21px;
+}
+label.label {
+	background-image:url('../images/radio.png');
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input[type=checkbox].checkbox-blue {
+	position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=checkbox].checkbox-blue + label.label-checkbox-blue {
+	padding-left:25px;
+	margin-top:2px;
+	height:20px; 
+	display:inline-block;
+	line-height:20px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:14px;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+input[type=checkbox].checkbox-blue:checked + label.label-checkbox-blue  {
+	background-position: 0 -20px;
+}
+label.label-checkbox-blue  {
+	background-image:url(../images/checkbox_blue.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+			
+
+input[type=radio].radio-blue {
+	position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=radio].radio-blue + label.label-radio-blue {
+	padding-left:25px;
+	height:20px; 
+	display:inline-block;
+	line-height:20px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:20px;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+input[type=radio].radio-blue:checked + label.label-radio-blue {
+	background-position: 0 -20px;
+}
+label.label-radio-blue{
+	background-image:url(../images/radio_blue.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+input[type=radio].radio-blue-minimal {
+	position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=radio].radio-blue-minimal + label.label-radio-blue-minimal {
+	padding-left:20px;
+	height:15px; 
+	display:inline-block;
+	line-height:15px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:14px;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+input[type=radio].radio-blue-minimal:checked + label.label-radio-blue-minimal {
+	background-position: 0 -15px;
+}
+label.label-radio-blue-minimal {
+	background-image:url(../images/radio_blue_minimal);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.pic-box-350{
+	width:350px;
+	height:350px;
+	overflow:hidden;
+}
+.pic-box-300{
+	width:300px;
+	height:300px;
+	overflow:hidden;
+}
+.pic-box-250{
+	width:250px;
+	height:250px;
+	overflow:hidden;
+}
+.pic-box-200{
+	width:200px;
+	height:200px;
+	overflow:hidden;
+}
+.pic-box-150{
+	width:150px;
+	height:150px;
+	overflow:hidden;
+}
+.pic-box-100{
+	width:100px;
+	height:100px;
+	overflow:hidden;
+}
+.pic-box-50{
+	width:50px;
+	height:50px;
+	overflow:hidden;
+}
+.pic-box-20{
+	width:20px;
+	height:20px;
+	overflow:hidden;
+}
+
+.drop-area{
+	width:100px; height:25px;
+	border: 1px solid #999; text-align: center;
+	padding:10px; cursor:pointer;
+}
+
+#thumbnail img{width:100px;height:100px;margin:5px;}
+canvas{border:1px solid red;}   
+
+.card{
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 3px;
+	margin:5px;
+	overflow: hidden;
+	float:left;
+}
+.card_bt{
+	font-size:14px;
+	border: none;
+	padding: 2px;
+	color: white;
+	text-align: center;
+	background:red;
+	
+	cursor: pointer;
+	width:100%;
+	height:25px;
+}

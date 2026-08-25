@@ -1,0 +1,29 @@
+body {
+	font-family: Kanit, Arial, sans-serif;
+	padding: 12px;
+}
+
+img,
+input[type="image"] {
+	display: block !important;
+	width: auto !important;
+	max-width: 100% !important;
+	height: auto !important;
+	max-height: none !important;
+	margin: 0 auto 12px auto !important;
+	object-fit: contain !important;
+	box-sizing: border-box !important;
+}
+
+iframe,
+video {
+	display: block !important;
+	width: 100% !important;
+	max-width: 100% !important;
+	margin: 0 auto 12px auto !important;
+	box-sizing: border-box !important;
+}
+
+table {
+	max-width: 100% !important;
+}
