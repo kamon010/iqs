@@ -11,6 +11,8 @@ deploy/
 DB/*.sql
 DB/*/
 *.sql
+!database/
+!database/*.sql
 db_test.php
 
 # Environment/secret files
