@@ -1,4 +1,4 @@
-# Local/runtime files
+﻿# Local/runtime files
 .agents/
 .codex/
 *.log
@@ -20,10 +20,11 @@ db_test.php
 program/.env
 
 # User-generated uploads from the live/local app
-program/uploads/
-uploads/
 
 # OS/editor noise
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Root uploads only - program/uploads is tracked by Git
+/uploads/
