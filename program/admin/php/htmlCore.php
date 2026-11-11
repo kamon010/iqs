@@ -151,6 +151,7 @@ class HtmlCore{
 				if($user_type=="admin"){
 					echo '
 					<li '.self::getMenuActive($page,"index").'><a href="index.php"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+                    <li '.self::getMenuActive($page,"youth_survey_report").'><a href="youth_survey_report.php"><i class="fa fa-list-alt"></i> <span>แบบสอบถามเด็กและเยาวชน</span></a></li>
 					
 					<li class="treeview '.self::getTreeMenuActive($page,array('report_a','report_b','report_c','report_d','report_e','report_1','report_2','report_3','report_4','report_5')).'">
 						<a href="#"><i class="fa fas fa-file"></i> <span>รายงานข้อมูลสมาชิก</span> <i class="fa fa-angle-left pull-right"></i></a>
