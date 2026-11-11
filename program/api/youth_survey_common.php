@@ -65,10 +65,11 @@ function youth_validate($input, $area = 'thung_saliam') {
         if (isset($q['depends']) && ($input[$q['depends']]??null)==='2') {
             $result[$id]=['status'=>'not_applicable','value'=>null]; continue;
         }
-        if ($v===null || $v==='' || $v===[]) { $result[$id]=['status'=>'skipped','value'=>null]; continue; }
+        if ($v===null || $v==='' || $v===[]) throw new InvalidArgumentException('กรุณาตอบคำถามส่วนที่ '.$q['section'].' ข้อ '.$q['number'].' ให้ครบ');
         if ($q['type']==='text') {
             if (!is_string($v) || !mb_check_encoding($v,'UTF-8') || mb_strlen($v)>2000) throw new InvalidArgumentException('ข้อความต้องไม่เกิน 2,000 ตัวอักษร');
             $v=trim($v);
+            if ($v==='') throw new InvalidArgumentException('กรุณาตอบคำถามส่วนที่ '.$q['section'].' ข้อ '.$q['number'].' ให้ครบ');
         } else {
             $allowed=array_map('strval',range(1,count($q['options'])));
             if ($q['type']==='multiple') {
@@ -78,7 +79,7 @@ function youth_validate($input, $area = 'thung_saliam') {
                 if (in_array('1',$v,true) && count($v)>1) throw new InvalidArgumentException('“ไม่ได้รับ” เลือกร่วมกับแหล่งอื่นไม่ได้');
             } elseif (!is_string($v) || !in_array($v,$allowed,true)) throw new InvalidArgumentException('ตัวเลือกไม่ถูกต้อง');
         }
-        $result[$id]=['status'=>$v===''?'skipped':'answered','value'=>$v===''?null:$v];
+        $result[$id]=['status'=>'answered','value'=>$v];
     }
     return $result;
 }

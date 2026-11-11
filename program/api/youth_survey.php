@@ -24,7 +24,7 @@ try {
     $receiptHash=hash('sha256',$receipt); $submissionHash=hash('sha256',$submission);
     $answerData=youth_record_answers($data['answers']??null,$area);
     $answers=json_encode($answerData,JSON_UNESCAPED_UNICODE|JSON_THROW_ON_ERROR);
-    $version=youth_schema($area)['version']; $consent='2026-10-28-v3';
+    $version=youth_schema($area)['version']; $consent='2026-11-11-v4-required';
     $respondentKey=youth_respondent_key($db);
     $db->begin_transaction();
     $stmt=$db->prepare('INSERT INTO youth_survey_responses (receipt_hash,submission_hash,schema_version,consent_version,guardian_confirmed,answers,area_code,respondent_key) VALUES (?,?,?,?,1,?,?,?) ON DUPLICATE KEY UPDATE id=LAST_INSERT_ID(id)');
